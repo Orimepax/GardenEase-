@@ -37,61 +37,72 @@ const navigation = {
   categories: [
   
     {
-      id: 'women',
-      name: 'Women',
+      id: 'Shop',
+      name: 'Shop',
       featured: [
         {
           name: 'New Arrivals',
           href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg',
+          imageSrc: './images/shopnowimg.png',
           imageAlt: 'Models sitting back to back, wearing Basic Tee in black and bone.',
         },
         {
           name: 'Basic Tees',
           href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg',
+          imageSrc: './images/vegi.jpg',
           imageAlt: 'Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.',
         },
       ],
       sections: [
         {
-          id: 'clothing',
-          name: 'Clothing',
+          id: 'Plants',
+          name: 'Plants',
           items: [
-            { name: 'Tops', href: '#' },
-            { name: 'Dresses', href: '#' },
-            { name: 'Pants', href: '#' },
-            { name: 'Denim', href: '#' },
-            { name: 'Sweaters', href: '#' },
-            { name: 'T-Shirts', href: '#' },
-            { name: 'Jackets', href: '#' },
-            { name: 'Activewear', href: '#' },
-            { name: 'Browse All', href: '#' },
+            { name: 'Indore Plants', href: '#' },
+            { name: 'Outdore Plants', href: '#' },
+            { name: 'Herbs', href: '#' },
+            { name: 'Artifical Plants', href: '#' },
+            { name: 'Seeds', href: '#' },
+            { name: '...', href: '#'}
+           
           ],
         },
         {
-          id: 'accessories',
-          name: 'Accessories',
+          id: 'Garden Tools',
+          name: 'Garden Tools',
           items: [
-            { name: 'Watches', href: '#' },
-            { name: 'Wallets', href: '#' },
-            { name: 'Bags', href: '#' },
-            { name: 'Sunglasses', href: '#' },
-            { name: 'Hats', href: '#' },
-            { name: 'Belts', href: '#' },
+            { name: 'Root Slayer Shovel', href: '#' },
+            { name: 'Multi Purpose Scissor', href: '#' },
+            { name: 'Weeding Knife', href: '#' },
+            { name: 'Gloves', href: '#' },
+            { name: 'Spear Head Shovel', href: '#' },
+            { name: 'Collapsible Bucket', href: '#' },
+            { name: '...', href: '#'}
           ],
         },
         {
-          id: 'brands',
-          name: 'Brands',
+          id: 'Garden Decor',
+          name: 'Garden Decor',
           items: [
-            { name: 'Full Nelson', href: '#' },
-            { name: 'My Way', href: '#' },
-            { name: 'Re-Arranged', href: '#' },
-            { name: 'Counterfeit', href: '#' },
-            { name: 'Significant Other', href: '#' },
+            { name: 'Planters', href: '#' },
+            { name: 'Garden Ornaments', href: '#' },
+            { name: 'Lighting', href: '#' },
+            { name: '...', href: '#'}
+            
           ],
         },
+        {
+            id: 'Soil & Fertilizers ',
+            name: 'Soil & Fertilizers',
+            items: [
+                { name: 'Potting Mix', href: '#'},
+                { name: 'Garden Soil', href: '#'},
+                { name:'Compost', href: '#'},
+                { name: 'Coco Peat', href: '#'},
+                { name: '...', href: '#'}
+
+            ],
+        }
       ],
     },
     {
