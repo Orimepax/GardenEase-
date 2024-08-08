@@ -16,117 +16,101 @@ import {
 import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = {
-  categories: [
+    
+ categories: [
+  
     {
-      id: 'women',
-      name: 'Women',
+      id: 'Shop',
+      name: 'Shop',
       featured: [
         {
           name: 'New Arrivals',
           href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg',
+          imageSrc: './images/shopnowimg.png',
           imageAlt: 'Models sitting back to back, wearing Basic Tee in black and bone.',
         },
         {
-          name: 'Basic Tees',
+        
           href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg',
+          imageSrc: './images/vegi.jpg',
           imageAlt: 'Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.',
         },
       ],
       sections: [
         {
-          id: 'clothing',
-          name: 'Clothing',
+          id: 'Plants',
+          name: 'Plants',
           items: [
-            { name: 'Tops', href: '#' },
-            { name: 'Dresses', href: '#' },
-            { name: 'Pants', href: '#' },
-            { name: 'Denim', href: '#' },
-            { name: 'Sweaters', href: '#' },
-            { name: 'T-Shirts', href: '#' },
-            { name: 'Jackets', href: '#' },
-            { name: 'Activewear', href: '#' },
-            { name: 'Browse All', href: '#' },
+            { name: 'Indore Plants', href: '#' },
+            { name: 'Outdore Plants', href: '#' },
+            { name: 'Herbs', href: '#' },
+            { name: 'Artifical Plants', href: '#' },
+            { name: 'Seeds', href: '#' },
+            { name: '...', href: '#'}
+           
           ],
         },
         {
-          id: 'accessories',
-          name: 'Accessories',
+          id: 'Garden Tools',
+          name: 'Garden Tools',
           items: [
-            { name: 'Watches', href: '#' },
-            { name: 'Wallets', href: '#' },
-            { name: 'Bags', href: '#' },
-            { name: 'Sunglasses', href: '#' },
-            { name: 'Hats', href: '#' },
-            { name: 'Belts', href: '#' },
+            { name: 'Root Slayer Shovel', href: '#' },
+            { name: 'Multi Purpose Scissor', href: '#' },
+            { name: 'Weeding Knife', href: '#' },
+            { name: 'Gloves', href: '#' },
+            { name: 'Spear Head Shovel', href: '#' },
+            { name: 'Collapsible Bucket', href: '#' },
+            { name: '...', href: '#'}
           ],
         },
         {
-          id: 'brands',
-          name: 'Brands',
+          id: 'Garden Decor',
+          name: 'Garden Decor',
           items: [
-            { name: 'Full Nelson', href: '#' },
-            { name: 'My Way', href: '#' },
-            { name: 'Re-Arranged', href: '#' },
-            { name: 'Counterfeit', href: '#' },
-            { name: 'Significant Other', href: '#' },
+            { name: 'Planters', href: '#' },
+            { name: 'Garden Ornaments', href: '#' },
+            { name: 'Lighting', href: '#' },
+            { name: '...', href: '#'}
+            
           ],
         },
+        {
+            id: 'Soil & Fertilizers ',
+            name: 'Soil & Fertilizers',
+            items: [
+                { name: 'Potting Mix', href: '#'},
+                { name: 'Garden Soil', href: '#'},
+                { name:'Compost', href: '#'},
+                { name: 'Coco Peat', href: '#'},
+                { name: '...', href: '#'}
+
+            ],
+        }
       ],
     },
     {
-      id: 'men',
-      name: 'Men',
+      id: 'Tips & Advice',
+      name: 'Tips & Advice',
       featured: [
         {
-          name: 'New Arrivals',
           href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg',
-          imageAlt: 'Drawstring top with elastic loop closure and textured interior padding.',
+          imageSrc: './images/tipsimg1.png',
         },
         {
-          name: 'Artwork Tees',
           href: '#',
-          imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-06.jpg',
-          imageAlt:
-            'Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt.',
+          imageSrc: './images/tipsimg2.png',
         },
       ],
       sections: [
         {
-          id: 'clothing',
-          name: 'Clothing',
+          id: 'Tips',
+          name: 'Tips',
           items: [
-            { name: 'Tops', href: '#' },
-            { name: 'Pants', href: '#' },
-            { name: 'Sweaters', href: '#' },
-            { name: 'T-Shirts', href: '#' },
-            { name: 'Jackets', href: '#' },
-            { name: 'Activewear', href: '#' },
-            { name: 'Browse All', href: '#' },
-          ],
-        },
-        {
-          id: 'accessories',
-          name: 'Accessories',
-          items: [
-            { name: 'Watches', href: '#' },
-            { name: 'Wallets', href: '#' },
-            { name: 'Bags', href: '#' },
-            { name: 'Sunglasses', href: '#' },
-            { name: 'Hats', href: '#' },
-            { name: 'Belts', href: '#' },
-          ],
-        },
-        {
-          id: 'brands',
-          name: 'Brands',
-          items: [
-            { name: 'Re-Arranged', href: '#' },
-            { name: 'Counterfeit', href: '#' },
-            { name: 'Full Nelson', href: '#' },
-            { name: 'My Way', href: '#' },
+            { name: 'Plant Care', href: '#' },
+            { name: 'Gardening Tips', href: '#' },
+            { name: 'Seasonal Guides', href: '#' },
+            { name: 'DIY Projects', href: '#' },
+            
           ],
         },
       ],
@@ -264,8 +248,8 @@ export default function Navigation() {
         </div>
       </Dialog>
 
-      <header className="relative bg-white">
-        <p className="flex h-10 items-center justify-center bg-indigo-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
+      <header className="relative bg-yellow-50">
+        <p className="flex h-10 items-center justify-center bg-green-900 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
           Get free delivery on orders over $100
         </p>
 
