@@ -32,7 +32,10 @@ import {
 import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = {
+    
+   
   categories: [
+  
     {
       id: 'women',
       name: 'Women',
@@ -302,9 +305,10 @@ export default function Navigation() {
                 <a href="#">
                   <span className="sr-only">Your Company</span>
                   <img
-                    alt=""
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                    className="h-8 w-auto"
+                    alt="GardenEase"
+                    //logo img src 
+                    src="./images/logo  (1).png"
+                    className="h-16 w-auto"
                   />
                 </a>
               </div>
