@@ -1,19 +1,3 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
-'use client'
-
 import { Fragment, useState } from 'react'
 import {
   Dialog,
@@ -151,10 +135,11 @@ export default function Navigation() {
         />
 
         <div className="fixed inset-0 z-40 flex">
-          <DialogPanel
-            transition
-            className="relative flex w-full max-w-xs transform flex-col overflow-y-auto bg-white pb-12 shadow-xl transition duration-300 ease-in-out data-[closed]:-translate-x-full"
-          >
+        <DialogPanel
+         transition
+         className="relative flex w-full max-w-xs transform flex-col overflow-y-auto bg-white pb-12 shadow-xl transition duration-300 ease-in-out"
+        >
+
             <div className="flex px-4 pb-2 pt-5">
               <button
                 type="button"
@@ -286,10 +271,9 @@ export default function Navigation() {
                 <a href="#">
                   <span className="sr-only">Your Company</span>
                   <img
-                    alt="GardenEase"
-                    //logo img src 
-                    src="./images/logo  (1).png"
-                    className="h-16 w-auto"
+                    alt=""
+                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                    className="h-8 w-auto"
                   />
                 </a>
               </div>
@@ -305,10 +289,8 @@ export default function Navigation() {
                         </PopoverButton>
                       </div>
 
-                      <PopoverPanel
-                        transition
-                        className="absolute inset-x-0 top-full text-sm text-gray-500 transition data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
-                      >
+                      <PopoverPanel className="absolute inset-x-0 top-full z-50 bg-white shadow-lg">
+
                         {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
                         <div aria-hidden="true" className="absolute inset-0 top-1/2 bg-white shadow" />
 
