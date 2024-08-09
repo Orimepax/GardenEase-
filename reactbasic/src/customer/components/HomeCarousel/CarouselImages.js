@@ -3,7 +3,4 @@ const images = require.context('../../../../public/images/CarouselImages', false
 const carouselImages = images.keys().map(images);
 
 export default carouselImages;
-<<<<<<< HEAD
 
-=======
->>>>>>> Develop

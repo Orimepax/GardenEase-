@@ -271,8 +271,8 @@ export default function Navigation() {
                 <a href="#">
                   <span className="sr-only">Your Company</span>
                   <img
-                    alt=""
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                    alt="GardenEase"
+                    src="./images/logo.png"
                     className="h-8 w-auto"
                   />
                 </a>
