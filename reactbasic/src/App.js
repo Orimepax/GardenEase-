@@ -1,14 +1,14 @@
 import './App.css';
 import Navigation from './customer/components/Navigation/Navigation';
-
 import HomePage from './customer/pages/HomePage/HomePage';
+import '@fortawesome/fontawesome-free/css/all.min.css'; // Add Font Awesome CSS import
 
 function App() {
   return (
-    <div className="">
-      <Navigation/>
+    <div>
+      <Navigation />
       <div>
-        <HomePage/> 
+        <HomePage />
       </div>
     </div>
   );

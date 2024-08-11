@@ -18,6 +18,7 @@ const MainCarousel = () => (
     autoPlay
     autoPlayInterval={2000}
     infinite
+    disableDotsControls
   />
 );
 
