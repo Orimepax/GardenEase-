@@ -18,7 +18,6 @@ import { Bars3Icon, MagnifyingGlassIcon, ShoppingBagIcon, XMarkIcon } from '@her
 const navigation = {
     
  categories: [
-  
     {
       id: 'Shop',
       name: 'Shop',
@@ -41,8 +40,8 @@ const navigation = {
           id: 'Plants',
           name: 'Plants',
           items: [
-            { name: 'Indore Plants', href: '#' },
-            { name: 'Outdore Plants', href: '#' },
+            { name: 'Indoor Plants', href: '#' },
+            { name: 'Outdoor Plants', href: '#' },
             { name: 'Herbs', href: '#' },
             { name: 'Artifical Plants', href: '#' },
             { name: 'Seeds', href: '#' },
@@ -131,7 +130,7 @@ export default function Navigation() {
       <Dialog open={open} onClose={setOpen} className="relative z-40 lg:hidden">
         <DialogBackdrop
           transition
-          className="fixed inset-0 bg-black bg-opacity-40 transition-opacity duration-300 ease-linear data-[closed]:opacity-0"
+          className="fixed inset-0 bg-black bg-opacity-40 transition-opacity duration-300 ease-linear data-[closed]:opacity-100"
         />
 
         <div className="fixed inset-0 z-40 flex">
@@ -159,7 +158,7 @@ export default function Navigation() {
                   {navigation.categories.map((category) => (
                     <Tab
                       key={category.name}
-                      className="flex-1 whitespace-nowrap border-b-2 border-transparent px-1 py-4 text-base font-medium text-green-900 data-[selected]:border-emerald-50 data-[selected]:text-green-900"
+                      className="flex-1 whitespace-nowrap border-b-2 border-transparent px-1 py-4 text-base font-medium text-green-900 data-[selected]:border-emerald-500 data-[selected]:text-green-900"
                     >
                       {category.name}
                     </Tab>
@@ -191,7 +190,6 @@ export default function Navigation() {
                           {section.name}
                         </p>
                         <ul
-                          role="list"
                           aria-labelledby={`${category.id}-${section.id}-heading-mobile`}
                           className="mt-6 flex flex-col space-y-6"
                         >
@@ -222,19 +220,19 @@ export default function Navigation() {
 
             <div className="space-y-6 border-t border-gray-200 px-4 py-6">
               <div className="flow-root">
-                <a href="#" className="-m-2 block p-2 font-medium text-gray-900">
+                <a href="/" className="-m-2 block p-2 font-medium text-gray-900">
                   Sign in
                 </a>
               </div>
               <div className="flow-root">
-                <a href="#" className="-m-2 block p-2 font-medium text-gray-900">
+                <a href="/" className="-m-2 block p-2 font-medium text-gray-900">
                   Create account
                 </a>
               </div>
             </div>
 
             <div className="border-t border-green-900 px-4 py-6">
-              <a href="#" className="-m-2 flex items-center p-2">
+              <a href="/" className="-m-2 flex items-center p-2">
                 <img
                   alt=""
                   src="https://tailwindui.com/img/flags/flag-canada.svg"
@@ -254,7 +252,7 @@ export default function Navigation() {
         </p>
 
         <nav aria-label="Top" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="border-b border-emerald-50">
+          <div className="border-b border-green-900">
             <div className="flex h-16 items-center">
               <button
                 type="button"
@@ -268,7 +266,7 @@ export default function Navigation() {
 
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
-                <a href="#">
+                <a href="/">
                   <span className="sr-only">Your Company</span>
                   <img
                     alt="GardenEase"
@@ -284,7 +282,7 @@ export default function Navigation() {
                   {navigation.categories.map((category) => (
                     <Popover key={category.name} className="flex">
                       <div className="relative flex">
-                        <PopoverButton className="relative z-10 -mb-px flex items-center border-b-2 border-transparent pt-px text-sm font-medium text-green-9s00 transition-colors duration-200 ease-out hover:text-emerald-500 data-[open]:border-emerald-500 data-[open]:text-emerald-500">
+                        <PopoverButton className="relative z-10 -mb-px flex items-center border-b-2 border-transparent pt-px text-sm font-medium text-green-900 transition-colors duration-200 ease-out hover:text-emerald-500 data-[open]:border-emerald-500 data-[open]:text-emerald-500">
                           {category.name}
                         </PopoverButton>
                       </div>
@@ -292,7 +290,7 @@ export default function Navigation() {
                       <PopoverPanel className="absolute inset-x-0 top-full z-50 bg-yellow-50 shadow-lg">
 
                         {/* Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow */}
-                        <div aria-hidden="true" className="absolute inset-0 top-1/2 bg-yellow-50 shadow" />
+                        <div aria-hidden="true" className="absolute inset-0 top-1/2 bg-yellow-500 shadow" />
 
                         <div className="relative bg-white">
                           <div className="mx-auto max-w-7xl px-8">
@@ -324,7 +322,6 @@ export default function Navigation() {
                                       {section.name}
                                     </p>
                                     <ul
-                                      role="list"
                                       aria-labelledby={`${section.name}-heading`}
                                       className="mt-6 space-y-6 sm:mt-4 sm:space-y-4"
                                     >
@@ -360,17 +357,17 @@ export default function Navigation() {
 
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                  <a href="#" className="text-sm font-medium text-green-900 hover:text-emerald-500">
+                  <a href="/" className="text-sm font-medium text-green-900 hover:text-emerald-500">
                     Sign in
                   </a>
                   <span aria-hidden="true" className="h-6 w-px bg-gray-200" />
-                  <a href="#" className="text-sm font-medium text-green-900 hover:text-emerald-500">
+                  <a href="/" className="text-sm font-medium text-green-900 hover:text-emerald-500">
                     Create account
                   </a>
                 </div>
 
                 <div className="hidden lg:ml-8 lg:flex">
-                  <a href="#" className="flex items-center text-green-900 hover:text-emerald-500">
+                  <a href="/" className="flex items-center text-green-900 hover:text-emerald-500">
                     <img
                       alt=""
                       src="https://tailwindui.com/img/flags/flag-canada.svg"
@@ -383,7 +380,7 @@ export default function Navigation() {
 
                 {/* Search */}
                 <div className="flex lg:ml-6">
-                  <a href="#" className="p-2 text-green-900 hover:text-emerald-500">
+                  <a href="/" className="p-2 text-green-900 hover:text-emerald-500">
                     <span className="sr-only">Search</span>
                     <MagnifyingGlassIcon aria-hidden="true" className="h-6 w-6" />
                   </a>
@@ -391,7 +388,7 @@ export default function Navigation() {
 
                 {/* Cart */}
                 <div className="ml-4 flow-root lg:ml-6">
-                  <a href="#" className="group -m-2 flex items-center p-2">
+                  <a href="/" className="group -m-2 flex items-center p-2">
                     <ShoppingBagIcon
                       aria-hidden="true"
                       className="h-6 w-6 flex-shrink-0 text-green-900 group-hover:text-emerald-500"
