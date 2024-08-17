@@ -1,88 +1,82 @@
-/* Ensure the parent div takes the full viewport height */
 .parent-div {
   display: flex;
-  justify-content: space-around; /* Space between each div2 */
-  align-items: center; /* Center items vertically */
-  height: 30vh; /* Height of the parent div */
-  padding: 0 5%; /* Optional padding to ensure some spacing from the edges */
-  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  justify-content: space-around;
+  align-items: center;
+  height: 30vh;
+  padding: 0 5%;
+  flex-wrap: wrap;
 }
 
-/* Style for each div2 */
 .div2 {
   display: flex;
-  flex-direction: column; /* Arrange children vertically */
-  justify-content: center; /* Center items vertically within div2 */
-  align-items: center; /* Center items horizontally within div2 */
-  width: 30%; /* Adjust width to fit three div2 elements */
-  height: 90%; /* Adjust height to fit within parent div */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 90%;
   box-shadow: 0 0 5px rgba(54, 88, 46, 0.2);
-  border-radius: 50%; /* Make the div circular */
-  padding: 0; /* Remove padding to reduce space */
-  margin: 1rem; /* Add margin to separate divs on smaller screens */
+  border-radius: 50%;
+  padding: 0;
+  margin: 1rem;
   margin-bottom: 2rem;
 }
 
-/* Style for icon div */
 .icon-div {
   display: flex;
-  justify-content: center; /* Center icon horizontally */
-  align-items: center; /* Center icon vertically */
-  width: 50px; /* Fixed width */
-  height: 50px; /* Fixed height, same as width for a circle */
-  background-color: transparent; /* Transparent background */
-  border-radius: 50%; /* Make the div circular */
-  box-shadow: 0 0 0px rgba(0, 0, 0, 0.2); /* Optional shadow */
-  margin-bottom: 0.2rem; /* Increased spacing below the icon to avoid overlap */
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0.2rem;
 }
 
-/* Style for empty divs */
 .empty-div {
   display: flex;
-  flex-direction: column; /* Arrange children vertically */
+  flex-direction: column;
   text-align: center;
-  align-items: center; /* Center items horizontally */
-  justify-content: center; /* Center items vertically */
-  width: 60%; /* Adjust width to fit within div2 */
-  height: auto; /* Allow height to adjust based on content */
-  margin: 0; /* Remove default margin */
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: auto;
+  margin: 0;
 }
 
-/* Specific styles for empty-div1 and empty-div2 */
 .empty-div h3 {
-  font-size: 1.5rem; /* Size for heading text */
-  font-weight: bold; /* Bold text */
-  margin-bottom: 0.5rem; /* Reduced space */
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 .empty-div p {
-  font-size: 1rem; /* Size for paragraph text */
-  margin-top: 0; /* Remove margin top to reduce space */
+  font-size: 1rem;
+  margin-top: 0;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .parent-div {
-    height: auto; /* Adjust height for smaller screens */
-    flex-direction: column; /* Stack div2 elements vertically */
+    height: auto;
+    flex-direction: column;
   }
 
   .div2 {
-    width: 80%; /* Increase width for smaller screens */
-    height: auto; /* Adjust height for smaller screens */
-    margin: 1rem 0; /* Add vertical margin for spacing */
+    width: 80%;
+    height: auto;
+    margin: 1rem 0;
   }
 
   .icon-div {
-    width: 40px; /* Adjust icon size for smaller screens */
-    height: 40px; /* Adjust icon size for smaller screens */
+    width: 40px;
+    height: 40px;
   }
 
   .empty-div h3 {
-    font-size: 1.25rem; /* Adjust heading size for smaller screens */
+    font-size: 1.25rem;
   }
 
   .empty-div p {
-    font-size: 0.875rem; /* Adjust paragraph size for smaller screens */
+    font-size: 0.875rem;
   }
 }

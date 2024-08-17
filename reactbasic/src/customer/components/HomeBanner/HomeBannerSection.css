@@ -1,21 +1,18 @@
-/* Custom class for Whisper font */
 .whisper-regular {
   font-family: 'Whisper', cursive;
-  font-weight: 400; /* Regular weight */
-  font-style: normal; /* Normal style */
-  font-size: 350%; /* Increase font size by 300% */
+  font-weight: 400;
+  font-style: normal;
+  font-size: 350%;
 }
 
-/* Custom class for Exo 2 font */
 .exo-2-custom {
   font-family: 'Exo 2', sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700; /* Example weight, you can adjust this */
-  font-style: normal; /* Normal style */
-  font-size: 100%; /* 1/3rd of the 'About Us' size (calculated as 1/3rd of 300%) */
+  font-weight: 700;
+  font-style: normal;
+  font-size: 100%;
 }
 
-/* Add background color to the section */
 .banner-section {
   background-color: #7FD081;
 }
